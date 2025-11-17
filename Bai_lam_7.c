@@ -1,20 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
-    char A[200];
-    char B[200];
+    char a[200];
+    char b[200];
     printf("Nhap chuoi A: ");
-    fgets(A, sizeof(A), stdin);
-    A[strcspn(A, "\n")]='\0';
+    fgets(a, sizeof(a), stdin);
+    a[strcspn(a, "\n")]='\0';
     printf("Nhap chuoi B: ");
-    fgets(B, sizeof(B), stdin);
-    B[strcspn(B, "\n")]='\0';
-    if (strstr(A, B)!=NULL) {
+    fgets(b, sizeof(b), stdin);
+    b[strcspn(b, "\n")]='\0';
+    if (strstr(a, b)!=NULL) {
         printf("Co\n");
     } else {
         printf("Khong\n");
     }
     return 0;
 }
+
+
 
 
